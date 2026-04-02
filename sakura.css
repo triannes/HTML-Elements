@@ -1,0 +1,144 @@
+body {
+    background-color: rgb(252, 239, 241);
+    overflow: hidden;
+}
+
+.sceneone {
+    width: 100vw;
+    height: 100vh;
+}
+
+.sakuramain {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sakuraimg {
+    margin-left: 30%;
+    width: 50%;
+    margin-top: 1%;
+}
+
+.sakuratitle {
+    margin-top: -19%;
+}
+
+.cbkeys {
+    width: 50%;
+    margin-top:1%;
+}
+
+.button {
+    position: absolute;
+    width: 10em;
+    top: 10%; 
+    right: 10%;
+}
+
+.button:hover {
+    animation: rotate 20s linear infinite;
+    transform-origin: center;
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1.5);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.5);
+    }
+}
+
+.scenetwo {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    overflow: hidden;
+}
+
+.topbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 11%;
+    background-color: white;
+    z-index: -1;
+}
+
+.navigation {
+    position: absolute;
+    display: flex;
+    gap: 5em;
+    left: 5%;
+    top: 1%;
+    width: 100vw;
+}
+
+.navigation p {
+    display: inline-block; 
+    font-family: "Varela Round", sans-serif;
+    font-size: 22px;
+    color: #ff7474e3;
+    cursor: pointer;
+}
+
+.navigation p:hover {
+    color: #EA8FA9;
+    text-shadow: 0 0 30px rgb(214, 13, 90);
+}
+
+.textcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    position: absolute;
+    bottom: 10vh;
+    left: 10vw;
+    resize: none;
+    width: 40vw;
+    height: 40vh;
+    background-image: url("STextbox.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 20px;
+    padding: 2em;
+    font-family: Varela Round;
+    text-shadow: 0 0 30px rgb(214, 13, 90);
+    color: white;
+}
+
+textarea::placeholder {
+  color: #ff747472;
+  font-style: italic;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.elements {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    color: #ffffff;
+    text-shadow: 0 0 30px rgb(214, 13, 90);
+}
+
+.elements {
+    width: 20%;
+    bottom: 10%;
+}
+
+.spots {
+    position: absolute;
+    top: 15%;
+    width: 60%;
+}

@@ -1,0 +1,192 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    background: #000000;
+}
+
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+.sceneone {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    width: 35em;
+    margin-top: -1em;
+}
+
+.mclaren-regular {
+  font-family: "McLaren", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kbd {
+    color: #ffffff;
+    text-shadow: 0 7px 4px rgba(0, 0, 0, 0.25);
+    font-family: "McLaren", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 2em;
+}
+
+.spacebar {
+    margin-right: 0.3em;
+    margin-left: 0.3em;
+    border-radius: 50px;
+    border: 5px solid #ffffff;
+    display: inline-block;
+    padding: 15px 20px;   
+    box-shadow: 0 7px 4px rgba(0, 0, 0, 0.25);
+}
+
+.starbutton {
+    position:absolute;
+    width: 15em;
+    top: 10%;
+    left: 13%;
+}
+
+.scenetwo {
+    display: none;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.starbutton:hover {
+    cursor: pointer;
+    animation: spin 2s linear infinite;
+}
+
+.navigation {
+    width: 25vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;  
+    left: 10%;
+    bottom: 10%;
+    position: absolute;
+}
+
+.continuebutton {
+    width: 100%;
+    color: #3A3A3A;
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: McLaren;
+    font-size: 1.5em;
+    padding: 30px;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 30px;
+    border: 12px linear-gradient #6EE4FF;
+    background: linear-gradient(180deg, #E1E1E1 13.46%, #C7E4F9 70.67%, #81DEF1 100%);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: 5px solid rgba(46, 149, 208, 0.80);
+}
+
+.savebutton {
+    width: 100%;
+    color: #3A3A3A;
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: McLaren;
+    font-size: 1.5em;
+    padding: 30px;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 30px;
+    border: 12px linear-gradient #6EE4FF;
+    background: linear-gradient(180deg, #E1E1E1 13.46%, #C7E4F9 70.67%, #81DEF1 100%);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: 5px solid rgba(46, 149, 208, 0.80);
+}
+
+.navigation button:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, #C7E4F9 13.46%, #81DEF1 70.67%, #E1E1E1 100%);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 0 10px #81DEF1;
+}
+
+.credits {
+    position: absolute;
+    text-align: center;
+    bottom: 5%;
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.thinkarea {
+    position: fixed;
+    bottom: 15%;
+    left: 50%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.think {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0 10px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFF;
+    font-family: McLaren;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 20px;
+    background: rgba(46, 149, 208, 0.80);
+    padding: 20px;
+    z-index: 2;
+}
+
+.thinkbox {
+    position: relative;
+    width: 80%;
+    height: 20vh;
+    border-radius: 15px;
+    border: 2px solid #2e95d0;
+    padding: 10px;
+    font-size: 16px;
+    z-index: 1;
+    background: rgba(255,255,255,0.9);
+    resize: none;
+    padding: 20px;
+}
+
+.elements {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    top: 10%;
+    right: 10%;
+}
