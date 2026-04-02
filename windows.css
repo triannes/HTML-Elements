@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.sceneone {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(4, 4, 202);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.windowserror {
+    width: 70%;
+}
+
+.inconsolata {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.windowstitle {
+    font-family: "Inconsolata", monospace;
+    font-size: 1.5em;
+    display: block;
+    width: fit-content;
+    background-color: rgb(177, 177, 177);
+    color: rgb(4, 4, 202);            
+    padding: 6px 12px;
+    margin: 0 auto;
+}
+
+.windowstext {
+    font-family: "Inconsolata", monospace;
+    color: white;
+    font-size: 1.5em;
+}
+
+.glhf {
+    text-align: center;
+    font-family: "Inconsolata", monospace;
+    color: white;
+    font-size: 1.5em;
+}
+
+.scenetwo {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(77, 141, 200);
+    display: none;
+    position: relative;
+}
+
+.messagebox {
+    width: 466px;
+    height: 264px;
+    background: #D9D9D9;
+    box-shadow: 4px 4px 0 0 rgba(255, 255, 255, 0.80) inset, -4px -4px 0 0 #171717 inset;
+    display: block;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.mbgradient {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 47px;
+    margin: 8px;
+    background: linear-gradient(90deg, #000468 0%, #1084D0 100%);
+}
+
+.mbheader {
+    color: #FFF;
+    font-family: "Inconsolata", monospace;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.96px;
+    margin: 0;
+    padding: 8px;
+    display: flex;
+}
+
+.mbtext {
+    width: 383px;
+    color: black;
+    font-family: "Inconsolata", monospace;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
+    margin: 50px;
+}
+
+button {
+    border: none;
+}
+
+.ok, .cancelbutton {
+    width: 132px;
+    height: 40px;
+    background: #D9D9D9;
+    box-shadow: 2px 2px 0 0 #000, 4px 4px 0 0 rgba(255, 255, 255, 0.80) inset, -2px -2px 0 0 #484848 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.okwhatever, .cancel {
+    color: #000;
+    font-family: Inconsolata;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
+}
+
+.ok, .cancelbutton {
+    border: 1px solid transparent;
+}
+
+.ok:hover, .cancelbutton:hover {
+    border: 1px dashed black;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.imagebox {
+    width: 30%;
+    height: 65%;
+    background: #D9D9D9;
+    box-shadow: 4px 4px 0 0 rgba(255, 255, 255, 0.80) inset, -4px -4px 0 0 #171717 inset;
+    display: block;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    overflow: hidden;
+}
+
+.imagegradient {
+    display: flex;
+    align-items: center; 
+    width: 96%;
+    height: 47px;
+    margin: 8px;
+    background: linear-gradient(90deg, #000468 0%, #1084D0 100%);
+}
+
+.imageheader {
+    color: #FFF;
+    font-family: "Inconsolata", monospace;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.96px;
+    margin: 0;
+    padding-left: 8px;
+}
+
+.picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -38%);
+    width: 95%;
+    object-fit: contain;
+}
+
+span {
+    text-decoration: underline;
+}
+
+nav {
+    margin-left: 3%;
+}
+
+.navigation div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+    margin-right:1px;
+    cursor: pointer;
+    font-family: Inconsolata, monospace;
+    letter-spacing: -1px;
+}
+
+.navigation div:hover {
+    box-shadow: inset 2px 2px 0 rgba(0,0,0,0.3),
+        inset -2px -2px 0 #fff; 
+}
+
+.texta {
+    width: 466px;
+    height: 310px;
+    background: #D9D9D9;
+    box-shadow: 4px 4px 0 0 rgba(255, 255, 255, 0.80) inset, -4px -4px 0 0 #171717 inset;
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+.textheader {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 47px;
+    margin: 8px;
+    background: linear-gradient(90deg, #000468 0%, #1084D0 100%);
+    color: #FFF;
+    font-family: "Inconsolata", monospace;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.96px;
+    line-height: 1;
+    white-space: pre;
+}
+
+textarea {
+    border: 2px solid black;
+    font-size: 1em;
+    color: #000;
+    font-family: Inconsolata;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
+    resize: none;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    width: 94%;
+    height: 60%;
+}
